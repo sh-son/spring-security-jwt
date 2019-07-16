@@ -30,7 +30,7 @@ public class User extends DateAudit {
 
     @NotBlank
     @Size(max = 15)
-    private String usernaem;
+    private String username;
 
     @NaturalId
     @NotBlank
@@ -50,9 +50,9 @@ public class User extends DateAudit {
 
     public User() {}
 
-    public User(String name, String usernaem, String email, String password) {
+    public User(String name, String username, String email, String password) {
         this.name = name;
-        this.usernaem = usernaem;
+        this.username = username;
         this.email = email;
         this.password = password;
     }
@@ -73,12 +73,12 @@ public class User extends DateAudit {
         this.name = name;
     }
 
-    public String getUsernaem() {
-        return usernaem;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUsernaem(String usernaem) {
-        this.usernaem = usernaem;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
